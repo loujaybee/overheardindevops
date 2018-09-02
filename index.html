@@ -22,16 +22,30 @@
         margin: auto;
       }
       .footer {
+        background-color: white;
         position: fixed;
         bottom: 0px;
+
         width: 100%;
+        margin: 0px;
+        padding: 10px;
+      }
+      .background-image {
+        background-image: url(./2014-10-07_devops-tools-feat.png);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.05;
       }
     </style>
   </head>
   <body>
+    <div class="background-image"></div>
+
     <div class="banner">
       <h1>Over Heard In DevOps</h1>
-      <p>Anonymous Tweets By DevOps Engineers When They Thinking No-one Is Listening</p>
+      <p>Anon Tweets Of DevOps Engineers</p>
     </div>
 
     <div class="feed-wrapper">
@@ -40,8 +54,8 @@
 
     <p class="footer">
       Created with ❤️ by
-        <a href="https://twitter.com/loujaybee" class="href">loujaybee</a>
-        (<a href="https://thedevcoach.co.uk" class="href">thedevcoach.co.uk</a>)
+        <a target="_blank" href="https://twitter.com/loujaybee" class="href">loujaybee</a>
+        (<a target="_blank"  href="https://thedevcoach.co.uk" class="href">thedevcoach.co.uk</a>)
     </p>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
